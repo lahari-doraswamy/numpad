@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText editTextPin;
+
     private StringBuilder enteredPin;
 
     @Override
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextPin = findViewById(R.id.editTextPin);
+
         enteredPin = new StringBuilder();
 
         setupButtonListeners();
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             enteredPin.append(buttonText);
         }
 
-        editTextPin.setText(enteredPin.toString());
+
     }
 
     private void showToast(String message) {
